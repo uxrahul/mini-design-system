@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pattern - Homepage</title>
+  <title>Footer</title>
 
   <!-- Favicon Starts here -->
     <link rel="icon" type="image/png" sizes="32x32" href="../Assets/Logo White Background Transparent 32.png" id="favicon-32">
@@ -52,8 +52,11 @@
     <!-- Custom Stylesheet for all page's design -->
     <link rel="stylesheet" href="../css/style.css">
 
-    <!-- Custom Stylesheet for the type page -->
-    <link rel="stylesheet" href="../css/pattern.css">
+    <!-- Custom Stylesheet for this page -->
+    <link rel="stylesheet" href="../css/components.css">
+
+    <!-- Prism CSS theme -->
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
     
     <!-- BoxIcons -->
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
@@ -85,11 +88,11 @@
                 <span>Components</span> <i class='bx bx-chevron-down'></i>
             </div>
             <ul>
-                <li><a href="../components/button.html">Buttons</a></li>
-                <li><a href="../components/pill.html">Pills</a></li>
-                <li><a href="../components/card.html">Cards</a></li>
-                <li><a href="../components/navbar.html">Nav Bar</a></li>
-                <li><a href="../components/footer.html">Footer</a></li>
+                <li><a href="button.html">Buttons</a></li>
+                <li><a href="pill.html">Pills</a></li>
+                <li><a href="card.html">Cards</a></li>
+                <li><a href="navbar.html">Nav Bar</a></li>
+                <li><a href="#">Footer</a></li>
                 <li><a href="#">Accordion</a></li>
                 <li><a href="#">Header</a></li>
             </ul>
@@ -99,8 +102,8 @@
                 <span>Patterns</span> <i class='bx bx-chevron-down'></i>
             </div>
             <ul>
-                <li><a href="#">Homepage</a></li>
-                <li><a href="page2.html">Case Study</a></li>
+                <li><a href="../patterns/page1.html">Homepage</a></li>
+                <li><a href="../patterns/page2.html">Case Study</a></li>
             </ul>
         </li>
           </ul>
@@ -119,30 +122,170 @@
     <div class="container custom-container"> 
         
       <!-- Beginning of page's content -->
-      <div class="container-fluid overflow-auto">
+    <div class="container mb-5 color-container">
         <div class="row">
-          <div id="content">
-            <h2>Pattern</h2>
-            <h4>Tablet Homepage - Grids</h4>
-            <p class="second-p">A visual illustration of how all the componenets work on the Tablet Homepage. The Grids are laid out to communicate the size and spacing specifications.</p>
-            <nav aria-label="Page navigation example">
-              <ul class="pagination justify-content-center flex-wrap">
-                <li class="page-item text-nowrap"><a class="page-link chip-tab" href="page1.html">Web-Design</a></li>
-                <li class="page-item text-nowrap"><a class="page-link chip-tab" href="page1-desktopGrid.html">Web-Grid</a></li>
-                <li class="page-item text-nowrap"><a class="page-link chip-tab" href="page1-tablet.html">Tablet-Design</a></li>
-                <li class="page-item text-nowrap active"><a class="page-link chip-tab" href="#">Tablet-Grid</a></li>
-                <li class="page-item text-nowrap"><a class="page-link chip-tab" href="page1-phone.html">Phone-Design</a></li>
-                <li class="page-item text-nowrap"><a class="page-link chip-tab" href="page1-phoneGrid.html">Phone-Grid</a></li>
-              </ul>
-            </nav>
-          </div>
+          <h2>Footer</h2>
+          <p class="p-exception">
+            The footer adopts the same minimal and grounded design language as the rest of the system, offering visual balance at the page’s 
+            end without drawing excess attention. Its clean layout, consistent spacing, and semantic structure reinforce usability while serving 
+            as a calm closing element across breakpoints.
+          </p>
         </div>
-      </div>
 
-      <div class="row">
-        <img src="../Assets/Screens/HPTabletG.png" alt="Homescreen Tablet with Grids" class="pattern-screens">
-      </div>
-      <!-- End of this page's content -->
+            <!-- Footer -->
+
+            <!-- Footer -->
+            <div class="row">
+                <div class="master-component-block">
+
+              <!-- Component Preview Area -->
+              <div class="component-container">
+                
+                <!-- Footer Component -->
+                <footer class="footer-container">
+                <div class="footer-logo-copy">
+                    <span class="footer-label">&copy; Rahul Singh, 2025</span>
+                </div>
+                <div class="footer-logo">
+                    <a href="#"><img src="../Assets/Logo/Logo Color White Background.png" alt="Logo"></a>
+                </div>
+                <div class="footer-socials">
+                    <span class="footer-label">Let's Connect:</span>
+                    <a href="#"><img src="../Assets/LinkedIn.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="../Assets/Instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="../Assets/Email.svg" alt="Email"></a>
+                </div>
+                </footer>
+                <!-- End of Footer Component -->
+
+              </div>
+              <!-- End of Component Preview Area -->
+
+              <!-- HTML Code Container -->
+              <div class="code-container">
+                  <div class="title-wrapper">HTML</div>
+                  <div class="code-snippet-wrapper">
+                <pre><code class="language-html">
+&lt;footer class=&quot;footer-container&quot;&gt;
+  &lt;div class=&quot;footer-logo-copy&quot;&gt;
+    &lt;span class=&quot;footer-label&quot;&gt;&amp;copy; Rahul Singh, 2025&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;footer-logo&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../Assets/Logo/Logo Color White Background.png&quot; alt=&quot;Logo&quot;&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;footer-socials&quot;&gt;
+    &lt;span class=&quot;footer-label&quot;&gt;Let's Connect:&lt;/span&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../Assets/LinkedIn.svg&quot; alt=&quot;LinkedIn&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../Assets/Instagram.svg&quot; alt=&quot;Instagram&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../Assets/Email.svg&quot; alt=&quot;Email&quot;&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+                </code></pre>
+                  </div>
+              </div>
+              <!-- End of HTML Code Container -->
+
+              <!-- CSS Code Container -->
+              <div class="code-container">
+                  <div class="title-wrapper">CSS</div>
+                  <div class="code-snippet-wrapper">
+<pre><code class="language-css">
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px 32px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border-default-light);
+  background: var(--surface-light);
+}
+
+.footer-logo-copy,
+.footer-logo,
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 0;
+  width: 100%;
+}
+
+.footer-logo-copy {
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  height: 48px;
+  /* padding: 8px 2px; */
+  gap: 4px;
+}
+
+.footer-logo img {
+  width: 48px;
+  height: 48px;
+}
+
+.footer-socials {
+  flex-wrap: nowrap;
+  gap: 32px;
+  align-content: center;
+}
+
+.footer-socials img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.footer-label {
+  font-family: var(--font-label);
+  font-size: var(--label-large-font-size);
+  font-weight: 500;
+}
+
+/* If the image is a raster or SVG where color is not respected, use filter: */
+.footer-socials img:hover {
+  filter: brightness(0) saturate(100%) invert(32%) sepia(87%) saturate(2643%) hue-rotate(203deg) brightness(75%) contrast(94%);
+}
+
+/* If the image is an SVG and uses fill, use the following instead: */
+/* .footer-socials img:hover {
+     fill: var(--icon-primary);
+} */
+
+
+@media (max-width: 999px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+</code></pre>
+                  </div>
+              </div>
+              <!-- End of CSS Code Container -->
+
+                </div>
+            </div>
+            <!-- End of Footer -->
+            
+
+            <!-- End of Footer -->
+
+            <div class="row">
+          <h3>Accessibility</h3>
+          <p>
+            The footer maintains <em>high WCAG AAA contrast</em> across all text and interactive elements, ensuring legibility in both 
+            light and dark environments. Its minimalist structure and clear spacing support quick scanning without visual strain, 
+            reinforcing a calm, accessible conclusion to each page.
+          </p>
+        </div>
+
+    </div>
+        <!-- End of this page's content -->
 
     </div>
     <!-- End of Main Wrapper -->
@@ -204,6 +347,12 @@
   </script> -->
 
   <script src="../js/custom-sidebar.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Prism JS -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+  <!-- Optional: Language plugins (HTML + CSS in your case) -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-css.min.js"></script>
+
 </body>
 </html>

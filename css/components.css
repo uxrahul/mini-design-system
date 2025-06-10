@@ -377,7 +377,87 @@ a.mobile-nav-item.active {
   }
 }
 
-
 /* --------------------------------------------------------------
                      End of Card Primary
+-------------------------------------------------------------- */
+
+/* --------------------------------------------------------------
+                     Footer Component
+-------------------------------------------------------------- */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px 32px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border-default-light);
+  background: var(--surface-light);
+}
+
+.footer-logo-copy,
+.footer-logo,
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 0;
+  width: 100%;
+}
+
+.footer-logo-copy {
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  height: 48px;
+  /* padding: 8px 2px; */
+  gap: 4px;
+}
+
+.footer-logo img {
+  width: 48px;
+  height: 48px;
+}
+
+.footer-socials {
+  flex-wrap: nowrap;
+  gap: 32px;
+  align-content: center;
+}
+
+.footer-socials img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.footer-label {
+  font-family: var(--font-label);
+  font-size: var(--label-large-font-size);
+  font-weight: 500;
+}
+
+/* If the image is a raster or SVG where color is not respected, use filter: */
+.footer-socials img:hover {
+  filter: brightness(0) saturate(100%) invert(32%) sepia(87%) saturate(2643%) hue-rotate(203deg) brightness(75%) contrast(94%);
+}
+
+/* If the image is an SVG and uses fill, use the following instead: */
+/* .footer-socials img:hover {
+     fill: var(--icon-primary);
+} */
+
+
+@media (max-width: 999px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+/* --------------------------------------------------------------
+                  End of Footer Component
 -------------------------------------------------------------- */
