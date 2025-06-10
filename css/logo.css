@@ -1,0 +1,22 @@
+@import url('variables.css');
+
+.logo-hero-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-16);
+
+}
+
+.logo-illustration {
+    width: 50%;
+}
+
+
+.logo-card-col {
+    max-width: 400px;
+}
+
+.logo-card-col p {
+    font-size: var(--body-caption-font-size);
+}

@@ -1,0 +1,151 @@
+
+
+
+:root {
+  /* These are the Font Size and Line Height Tokens */
+  /* Font Families */
+  --font-display: 'Oswald', sans-serif;
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'Merriweather', serif;
+  --font-label: 'Roboto', sans-serif;
+  --font-label-small: 'Roboto', sans-serif;
+
+  /* Display */
+  --display-font-size: 61px;
+  --display-line-height: 72px;
+
+  /* Headings */
+  --h1-font-size: 49px;
+  --h1-line-height: 60px;
+  --h2-font-size: 39px;
+  --h2-line-height: 44px;
+  --h3-font-size: 31px;
+  --h3-line-height: 36px;
+  --h4-font-size: 25px;
+  --h4-line-height: 30px;
+  --h5-font-size: 20px;
+  --h5-line-height: 24px;
+
+  /* Body */
+  --body-large-font-size: 18px;
+  --body-large-line-height: 28px;
+  --body-default-font-size: 16px;
+  --body-default-line-height: 24px;
+  --body-caption-font-size: 14px;
+  --body-caption-line-height: 20px;
+
+  /* Labels */
+  --label-large-font-size: 16px;
+  --label-large-line-height: 20px;
+  --label-default-font-size: 14px;
+  --label-default-line-height: 20px;
+  --label-default-caps-font-size: 14px;
+  --label-default-caps-line-height: 20px;
+  --label-small-font-size: 11px;
+  --label-small-line-height: 20px;
+
+
+  /* These are the Color Tokens */
+  /* Text Colors */
+  --text-display: #1E252F;
+  --text-header-default: #1E252F;
+  --text-subtitle-default: #3C4B5D;
+  --text-body-default: #3C4B5D;
+  --text-caption-default: #59708C;
+  --text-primary: #0058CC;
+  --text-primary-hover: #0047A3;
+  --text-information: #7A0050;
+  --text-warning: #960000;
+  --text-success: #206A4B;
+  --text-on-action: #F6F7F9;
+  --text-on-surface-invert: #F6F7F9;
+  --text-disabled: #AFBCCC;
+
+  /* Icon Colors */
+  --icon-default: #1E252F;
+  --icon-primary: #0058CC;
+  --icon-information: #7A0050;
+  --icon-warning: #960000;
+  --icon-success: #206A4B;
+  --icon-on-action: #F6F7F9;
+
+  /* Border Colors */
+  --border-default-light: #BEC8D5;
+  --border-default: #AFBCCC;
+  --border-default-dark: #7F94AE;
+  --border-primary: #0058CC;
+  --border-information: #CC0086;
+  --border-warning: #FFAB00;
+  --border-success: #36B37E;
+  --border-disabled: #D0D8E1;
+
+  /* Surface Colors */
+  --surface-light: #FFFFFF;
+  --surface-default: #F6F7F9;
+  --surface-dark: #EFF2F5;
+  --surface-primary: #E0EEFF;
+  --surface-information: #FFE0F4;
+  --surface-warning: #FFF7E5;
+  --surface-success: #EBF9F3;
+  --surface-invert: #0E1116;
+  --surface-action: #0058CC;
+  --surface-action-hover: #0047A3;
+  --surface-action-secondary: #CC0086;
+  --surface-action-secondary-hover: #A3006A;
+  --surface-disabled: #E0E5EB;
+  --surface-disabled-border: #EFF2F5;
+
+  
+  /* These are the Spacing Tokens */
+  /* Spacing Scale (in px) */
+  --spacing-2: 2px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-100: 100px;
+  --spacing-120: 120px;
+  --spacing-full: 999px;
+
+  /* Border Radius Tokens (in px) */
+  --radius-2: 2px;
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-24: 24px;
+  --radius-28: 28px;
+  --radius-32: 32px;
+  --radius-36: 36px;
+}
+
+/* Mobile Typography Adjustments */
+@media (max-width: 575.98px) {
+  :root {
+    --display-font-size: 48px;
+    --display-line-height: 56px;
+
+    --h1-font-size: 44px;
+    --h1-line-height: 52px;
+    --h2-font-size: 36px;
+    --h2-line-height: 44px;
+    --h3-font-size: 28px;
+    --h3-line-height: 32px;
+    --h4-font-size: 24px;
+    --h4-line-height: 28px;
+    --h5-font-size: 20px;
+    --h5-line-height: 24px;
+
+    /* Body and labels remain unchanged */
+  }
+  
+}

@@ -1,0 +1,383 @@
+@import url('variables.css');
+
+/* --------------------------------------------------------------
+        Master Code Block for demonstrating compoenents
+-------------------------------------------------------------- */
+
+.master-component-block {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-8);
+  border: 1px solid var(--border-default-light);
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Component Container */
+.component-container {
+  padding: 20px 16px;
+}
+
+/* Code Container */
+.code-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title Wrapper */
+.title-wrapper {
+  background-color: var(--surface-dark);
+  padding: 8px 16px;
+  font-weight: 600;
+  font-family: var(--font-label);
+  font-size: var(--label-default-caps-font-size);
+  border-top: 1px solid var(--border-default-light);
+  border-bottom: 1px solid var(--border-default-light);
+}
+
+/* Code Snippet Wrapper */
+.code-snippet-wrapper {
+  padding: 20px 16px;
+  font-family: monospace;
+  font-size: 14px;
+  background-color: #F8F9FA;
+  overflow-x: auto;
+}
+
+/* Override Prism background */
+pre[class*="language-"], code[class*="language-"] {
+  background-color: #f8f9fa !important;
+}
+
+
+/* --------------------------------------------------------------
+    End of Master Code Block for demonstrating compoenents
+-------------------------------------------------------------- */
+
+
+
+/* --------------------------------------------------------------
+              Desktop Default Navigation Bar
+-------------------------------------------------------------- */
+
+.desktop-default {
+  display: flex;
+  height: 64px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--border-default-light);
+  background: var(--surface-light);
+}
+
+.nav-internal-frame {
+  display: flex;
+  max-width: 1040px;
+  padding: 0 16px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  width: 100%;
+}
+
+/* Logo Section */
+.logo-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.logo-nav img {
+  width: 48px;
+  height: 48px;
+}
+
+.logo-nav h6 {
+    margin: 0;
+}
+
+/* Nav Items Section */
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  font-family: var(--font-label);
+  font-size: var(--label-default-font-size);
+  font-weight: 500;
+  color: var(--text-body-default);
+}
+
+.nav-items a:hover {
+  color: var(--text-primary);
+}
+
+/* --------------------------------------------------------------
+           End of Desktop Default Navigation Bar
+-------------------------------------------------------------- */
+
+
+
+/* --------------------------------------------------------------
+                  Mobile Navigation Bar
+-------------------------------------------------------------- */
+
+/* Mobile Navigation */
+.mobile-expanded {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.mobile-expanded a{
+    text-decoration: none;
+    color: var(--text-body-default);
+}
+
+
+.mobile-expanded a:hover{
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+/* Top Bar */
+.mobile-collapsed-bar {
+  display: flex;
+  width: 100%;
+  height: 64px;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border-default-light);
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.mobile-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1 0 0;
+}
+
+.mobile-logo-wrapper h6{
+    margin: 0;
+}
+
+.mobile-logo-wrapper img {
+  width: 48px;
+  height: 48px;
+}
+
+/* Drawer */
+/* Mobile nav drawer with animation */
+.mobile-nav-drawer {
+    display: flex;
+    align-items: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 0;
+    background-color: var(--surface-light);
+    border-bottom: 1px solid var(--border-default-light);
+}
+
+.mobile-nav-drawer.active {
+  max-height: 500px; /* Adjust as needed */
+  padding-bottom: 32px;
+}
+
+/* Navigation Links Group */
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+/* Single Link Item */
+.mobile-nav-item {
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  width: 100%;
+  border-bottom: 1px solid var(--border-default-light);
+  font-weight: 600;
+  padding: 0 16px;
+
+  font-family: var(--font-label);
+  font-size: var(--label-default-font-size);
+  font-weight: 500;
+  color: var(--text-body-default);
+}
+
+a.mobile-nav-item:hover {
+    background-color: var(--surface-primary);
+}
+
+a.mobile-nav-item.active {
+    background-color: var(--surface-primary);
+}
+
+.bx-menu-logo:hover {
+  color: var(--icon-primary);
+  cursor: pointer;
+}
+
+/* --------------------------------------------------------------
+                 End of Mobile Navigation Bar
+-------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------
+                    Pill Component
+-------------------------------------------------------------- */
+
+.pill {
+  display: inline-block;
+  height: 24px;
+  padding: 2px 12px;
+  font-family: var(--font-label);
+  font-size: var(--label-small-font-size);
+  font-weight: 500;
+  border-radius: var(--spacing-full);
+  text-align: center;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+/* Blue */
+.pill-info {
+  background-color: var(--surface-primary);
+  color: var(--text-primary);
+}
+
+/* Red/Pink */
+.pill-danger {
+  background-color: var(--surface-information);
+  color: var(--text-information);
+}
+
+/* Green */
+.pill-success {
+  background-color: var(--surface-success);
+  color: var(--text-success);
+}
+
+/* Yellow */
+.pill-warning {
+  background-color: var(--surface-warning);
+  color: var(--text-warning);
+}
+
+/* Default/Neutral with border */
+.pill-default {
+  background-color: var( --surface-default);
+  color: var(--text-body-default);
+  outline: 1px solid var(--border-default);
+}
+
+/* --------------------------------------------------------------
+                   End of Pill Component
+-------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------
+                      Card Primary
+-------------------------------------------------------------- */
+.card-primary {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 32px;
+  gap: 32px;
+  background-color: var(--surface-light);
+  border-radius: var(--radius-12);
+  border: 1px solid var(--border-default-light);
+  box-shadow: 0px 16px 32px -4px rgba(60, 75, 93, 0.10), 0px 2px 4px 0px rgba(60, 75, 93, 0.04);
+}
+
+.card-primary img {
+  width: 50%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: var(--radius-8);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  gap: 32px;
+}
+
+.card-content>.btn {
+  width: fit-content;
+}
+
+/* Pills */
+.pill-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Card Title + Body */
+.card-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-title {
+  font-family: var(--font-heading);
+  font-size: var(--h4-font-size);
+  line-height: var(--h4-line-height);
+  font-weight: 500;
+  color: var(--text-header-default);
+  margin: 0;
+}
+
+.card-description {
+
+  color: var(--text-body-default);
+  margin: 0;
+}
+
+
+
+
+@media (max-width: 999px) {
+  .card-primary {
+    flex-direction: column;
+    padding-right: 0;
+  }
+
+  .card-content {
+    padding: 0 32px 32px 32px;
+  }
+
+  .card-primary img {
+  width: 100%;
+}
+  .card-primary img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+
+/* --------------------------------------------------------------
+                     End of Card Primary
+-------------------------------------------------------------- */

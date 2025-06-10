@@ -1,0 +1,95 @@
+@import url('variables.css');
+
+span.oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+span.merriweather {
+    font-family: 'Merriweather', serif;
+}
+
+span.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.type-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    gap: 16px;
+    height: fit-content;
+    /* min-height: 30vh; */
+    /* padding: 24px 16px;
+    background-color: rgba(0,0,0,0.7);
+    position: relative;
+    border-radius: var(--radius-8); */
+}
+
+/* .type-container h2 {
+    color: var(--text-on-surface-invert);
+}
+
+.type-container p {
+    color: var(--text-on-surface-invert);
+} */
+
+.type-container a {
+    /* color: var(--text-on-surface-invert); */
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+.type-container a:hover {
+    color: var(--text-primary-hover);
+}
+
+code {
+    color: var(--text-information);
+}
+
+p.body-large {
+    font-size: var(--body-large-font-size);
+    line-height: var(--body-large-line-height);
+}
+
+p.body-caption {
+    font-size: var(--body-caption-font-size);
+    line-height: var(--body-caption-line-height);
+}
+
+p.label-small {
+    font-family: var(--font-label);
+    font-size: var(--label-small-font-size);
+    line-height: var(--label-small-line-height);
+    font-weight: 500;
+}
+
+p.label-default {
+    font-family: var(--font-label);
+    font-size: var(--label-default-font-size);
+    line-height: var(--label-default-line-height);
+    font-weight: 500;
+}
+
+p.label-default-caps {
+    font-family: var(--font-label);
+    font-size: var(--label-default-font-size);
+    line-height: var(--label-default-line-height);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+p.label-large {
+    font-family: var(--font-label);
+    font-size: var(--label-large-font-size);
+    line-height: var(--label-large-line-height);
+    font-weight: 500;
+}
+
+p.hover-state {
+    color: var(--text-primary-hover);
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}

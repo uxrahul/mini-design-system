@@ -1,0 +1,37 @@
+@import url('variables.css');
+
+.pagination li {
+    margin-left: 0;
+}
+
+.pagination a {
+    font-family: var(--font-label);
+    font-size: var(--label-default-caps-font-size);
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    color: var(--text-body-default);
+    background-color: var(--surface-default);
+}
+
+.pagination a:hover {
+    text-decoration: none;
+    color: var(--text-on-action);
+    background-color: var(--surface-action);
+}
+
+.pagination .active a {
+    color: var(--text-on-action);
+    background-color: var(--surface-action);
+}
+
+.second-p {
+    margin-bottom: 48px;
+}
+
+.pattern-screens {
+    border-radius: var(--spacing-8);
+    border: 1px solid var(--border-default-light);
+    padding: 0;
+    width: fit-content;
+    margin: auto;
+}

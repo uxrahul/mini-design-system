@@ -1,0 +1,103 @@
+@import url('variables.css');
+
+.color-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    gap: 16px;
+    height: fit-content;
+    /* min-height: 30vh; */
+    /* padding: 24px 16px;
+    background-color: rgba(0,0,0,0.7);
+    position: relative;
+    border-radius: var(--radius-8); */
+}
+
+/* .type-container h2 {
+    color: var(--text-on-surface-invert);
+}
+
+.type-container p {
+    color: var(--text-on-surface-invert);
+} */
+
+.color-container a {
+    /* color: var(--text-on-surface-invert); */
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+.color-container a:hover {
+    color: var(--text-primary-hover);
+}
+
+.swatch {
+    height:64px; 
+    border-radius:8px 8px 0 8px;
+}
+
+.swatch-label {
+    font-family: var(--font-body);
+    font-size: var(--body-caption-font-size);
+}
+
+
+.grandfather {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-28);
+    margin-top: var(--spacing-40);
+}
+
+
+.container-outer {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.container-outer p {
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: var(--body-default-font-size);
+}
+
+.container-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-8);
+    background-color: var(--surface-dark);
+    border: 1px solid var(--border-default-light);
+    border-radius: var(--spacing-40);
+    min-width: 160px;
+    height: fit-content;
+    padding: 6px 8px;
+    align-items: center;
+    line-height: 1;
+}
+
+.container-inner p {
+    margin: 0;
+    /* margin-right: 8px; */
+    font-family: monospace;
+    font-size: var(--label-default-font-size);
+}
+
+.color-swatch {
+    border-radius: var(--spacing-full);
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+}
+
+
+.color-swatch-inverse {
+    background-color: var(--surface-invert);
+}
+
+.color-swatch-inverse p{
+    color: var(--text-on-surface-invert);
+}
